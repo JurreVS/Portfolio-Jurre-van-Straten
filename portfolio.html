@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Designer Portfolio</title>
+    <meta name="description" content="Portfolio of a game designer showcasing projects, skills, and experience">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: "#4F46E5",
+                        dark: "#1F2937",
+                        light: "#F9FAFB"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-light font-sans text-dark">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-10 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div class="mb-3 sm:mb-0">
+                    <h1 class="text-xl font-bold text-accent">Game Designer</h1>
+                    <p class="text-sm text-gray-600">Interactive Experiences & Game Systems</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="scrollToSection('about')" class="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-accent hover:bg-gray-100 rounded transition-colors">About</button>
+                    <button onclick="scrollToSection('experience')" class="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-accent hover:bg-gray-100 rounded transition-colors">Experience</button>
+                    <button onclick="scrollToSection('skills')" class="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-accent hover:bg-gray-100 rounded transition-colors">Skills</button>
+                    <button onclick="scrollToSection('contact')" class="px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-accent hover:bg-gray-100 rounded transition-colors">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- About Section -->
+        <section id="about" class="mb-16 scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <h2 class="text-2xl font-bold text-dark mr-4">About Me</h2>
+                <div class="flex-1 h-px bg-gray-300"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <p class="text-lg mb-4">
+                        I'm a passionate game designer focused on creating engaging player experiences through thoughtful mechanics, compelling narratives, and intuitive systems. With a background in both technical implementation and creative direction, I bridge the gap between vision and playable reality.
+                    </p>
+                    <p class="text-lg mb-4">
+                        My approach combines player psychology with iterative design, constantly testing and refining until the gameplay feels just right. I believe great games emerge from constraints, clear communication, and a deep understanding of what makes an experience memorable.
+                    </p>
+                    <p class="text-lg">
+                        Currently exploring emergent gameplay systems and narrative-driven mechanics that adapt to player choices. Always looking for interesting problems to solve and teams to collaborate with.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-semibold mb-4 text-accent">Quick Info</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-medium">Role:</span> Game Designer</li>
+                        <li><span class="font-medium">Focus:</span> Systems & Mechanics</li>
+                        <li><span class="font-medium">Tools:</span> Unity, Unreal, Figma</li>
+                        <li><span class="font-medium">Specialties:</span> Level Design, Combat Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16 scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <h2 class="text-2xl font-bold text-dark mr-4">Experience</h2>
+                <div class="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            <!-- Project 1 -->
+            <div class="mb-12 bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Project Title 1</h3>
+                    <p class="text-gray-600 mb-4">Role: Lead Game Designer | 2024</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Overview</h4>
+                        <p class="text-gray-700">
+                            Brief description of the project. What type of game is it? What platforms? What was the scope and your primary contribution?
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Design Process</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Conducted player research and competitive analysis</li>
+                            <li>Developed core gameplay loop and progression systems</li>
+                            <li>Created design documentation and prototypes</li>
+                            <li>Iterated based on playtesting feedback</li>
+                            <li>Collaborated with engineers and artists for implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Key Features</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Feature or mechanic you designed</li>
+                            <li>Another notable system or element</li>
+                            <li>Innovative solution to a design problem</li>
+                        </ul>
+                    </div>
+
+                    <!-- Image Placeholder -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="bg-gray-200 rounded h-64 flex items-center justify-center">
+                            <span class="text-gray-500">Screenshot 1</span>
+                        </div>
+                        <div class="bg-gray-200 rounded h-64 flex items-center justify-center">
+                            <span class="text-gray-500">Screenshot 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="mb-12 bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Project Title 2</h3>
+                    <p class="text-gray-600 mb-4">Role: Game Designer | 2023</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Overview</h4>
+                        <p class="text-gray-700">
+                            Brief description of the project. What type of game is it? What platforms? What was the scope and your primary contribution?
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Design Process</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Designed puzzle mechanics and level layouts</li>
+                            <li>Balanced difficulty curves across game chapters</li>
+                            <li>Created flowcharts and wireframes</li>
+                            <li>Worked with narrative team on story integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Key Features</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Unique mechanic or system</li>
+                            <li>Player feedback integration</li>
+                            <li>Technical constraint solutions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Image Placeholder -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="bg-gray-200 rounded h-64 flex items-center justify-center">
+                            <span class="text-gray-500">Screenshot 1</span>
+                        </div>
+                        <div class="bg-gray-200 rounded h-64 flex items-center justify-center">
+                            <span class="text-gray-500">Screenshot 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="mb-12 bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Project Title 3</h3>
+                    <p class="text-gray-600 mb-4">Role: Junior Designer | 2022</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Overview</h4>
+                        <p class="text-gray-700">
+                            Brief description of the project. What type of game is it? What platforms? What was the scope and your primary contribution?
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-lg mb-2">Design Process</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Assisted in level design and enemy placement</li>
+                            <li>Created and maintained design documentation</li>
+                            <li>Participated in daily playtests and scrums</li>
+                            <li>Implemented feedback from senior designers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Image Placeholder -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-gray-200 rounded h-48 flex items-center justify-center">
+                            <span class="text-gray-500">Image 1</span>
+                        </div>
+                        <div class="bg-gray-200 rounded h-48 flex items-center justify-center">
+                            <span class="text-gray-500">Image 2</span>
+                        </div>
+                        <div class="bg-gray-200 rounded h-48 flex items-center justify-center">
+                            <span class="text-gray-500">Image 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16 scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <h2 class="text-2xl font-bold text-dark mr-4">Skills</h2>
+                <div class="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 text-accent">Game Design</h3>
+                        <p class="text-gray-700">
+                            Systems Design, Level Design, Combat Design, Progression Systems, Game Balancing, Prototyping
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 text-accent">Technical</h3>
+                        <p class="text-gray-700">
+                            Unity, Unreal Engine, C# Scripting, Blueprint, Version Control (Git), Playfab
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 text-accent">Tools & Software</h3>
+                        <p class="text-gray-700">
+                            Figma, Miro, Notion, Jira, Confluence, Adobe Creative Suite, Blender (basics)
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 text-accent">Documentation</h3>
+                        <p class="text-gray-700">
+                            GDD Writing, Technical Documentation, Flowcharts, Wireframing, User Stories
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 text-accent">Soft Skills</h3>
+                        <p class="text-gray-700">
+                            Team Collaboration, Communication, Problem Solving, Critical Thinking, Playtesting
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 text-accent">Other</h3>
+                        <p class="text-gray-700">
+                            Player Psychology, Narrative Design, UI/UX Basics, Analytics, Agile/Scrum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16 scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <h2 class="text-2xl font-bold text-dark mr-4">Contact</h2>
+                <div class="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 max-w-2xl">
+                <p class="text-lg mb-6 text-gray-700">
+                    Interested in working together or want to discuss game design? Feel free to reach out!
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="font-semibold text-gray-700 w-24">Email:</span>
+                        <a href="mailto:your.email@example.com" class="text-accent hover:underline">your.email@example.com</a>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <span class="font-semibold text-gray-700 w-24">Phone:</span>
+                        <a href="tel:+1234567890" class="text-accent hover:underline">+1 (234) 567-890</a>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <span class="font-semibold text-gray-700 w-24">LinkedIn:</span>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-accent hover:underline">linkedin.com/in/yourprofile</a>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <span class="font-semibold text-gray-700 w-24">Portfolio:</span>
+                        <a href="https://yourportfolio.com" target="_blank" class="text-accent hover:underline">yourportfolio.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2026 Game Designer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+</body>
+</html>
