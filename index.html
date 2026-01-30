@@ -168,11 +168,10 @@
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                      <!-- Video 1 (large, kept aspect ratio) -->
+                      <!-- Video 1 (taller but scaled down on small screens) -->
                       <figure class="overflow-hidden rounded-lg flex flex-col items-center">
-                        <div class="w-full max-w-lg aspect-video overflow-hidden rounded"
-                             style="aspect-ratio:16/9;">
-                          <video class="w-full h-full object-cover rounded"
+                        <div class="w-full max-w-lg md:max-w-xl md:max-h-[520px] bg-black rounded overflow-hidden flex items-center justify-center transform scale-90 md:scale-100">
+                          <video class="w-auto max-h-[420px] md:max-h-[480px] object-contain rounded"
                                  autoplay loop muted playsinline preload="metadata">
                             <source src="images/Night-Liners-1.mp4" type="video/mp4">
                           </video>
@@ -182,9 +181,8 @@
                     
                       <!-- Video 2 (same sizing as video 1) -->
                       <figure class="overflow-hidden rounded-lg flex flex-col items-center">
-                        <div class="w-full max-w-lg aspect-video overflow-hidden rounded"
-                             style="aspect-ratio:16/9;">
-                          <video class="w-full h-full object-cover rounded"
+                        <div class="w-full max-w-lg md:max-w-xl md:max-h-[520px] bg-black rounded overflow-hidden flex items-center justify-center transform scale-90 md:scale-100">
+                          <video class="w-auto max-h-[420px] md:max-h-[480px] object-contain rounded"
                                  autoplay loop muted playsinline preload="metadata">
                             <source src="images/Night-Liners-2.mp4" type="video/mp4">
                           </video>
@@ -192,20 +190,20 @@
                         <figcaption class="text-xs text-gray-500 mt-2">Match startup</figcaption>
                       </figure>
                     
-                      <!-- Image 3 (smaller than videos) -->
+                      <!-- Image 3 (smaller) -->
                       <figure class="overflow-hidden rounded-lg flex flex-col items-center">
                         <img src="images/Night-Liners-3.png"
                              alt="Night-Liners UI testing"
-                             class="w-full max-w-sm h-auto object-cover rounded"
+                             class="w-full max-w-xs h-auto object-contain rounded"
                              loading="lazy">
                         <figcaption class="text-xs text-gray-500 mt-2">UI prototype</figcaption>
                       </figure>
                     
-                      <!-- Image 4 (a bit bigger than image 3) -->
+                      <!-- Image 4 (a bit larger than image 3) -->
                       <figure class="overflow-hidden rounded-lg flex flex-col items-center">
                         <img src="images/Night-Liners-4.png"
                              alt="Night-Liners code snippet"
-                             class="w-full max-w-md h-auto object-cover rounded"
+                             class="w-full max-w-sm md:max-w-md h-auto object-contain rounded"
                              loading="lazy">
                         <figcaption class="text-xs text-gray-500 mt-2">Code snippet</figcaption>
                       </figure>
