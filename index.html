@@ -167,45 +167,49 @@
                         </div>
                     </div>
 
-                    <!-- Image Placeholder -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                        <figure class="overflow-hidden rounded-lg">
-                            <video
-                              class="w-35% h-35% object-cover rounded"
-                              autoplay
-                              loop
-                              muted
-                              playsinline
-                              preload="metadata"
-                            >
-                              <source src="images/Night-Liners-1.mp4" type="video/mp4">
-                            </video>
-                            <figcaption class="text-xs text-gray-500 mt-2">Gameplay showcase</figcaption>
-                        </figure>
-                        <figure class="overflow-hidden rounded-lg">
-                            <video
-                              class="w-30% h-30% object-cover rounded"
-                              autoplay
-                              loop
-                              muted
-                              playsinline
-                              preload="metadata"
-                            >
-                              <source src="images/Night-Liners-2.mp4" type="video/mp4">
-                            </video>
-                            <figcaption class="text-xs text-gray-500 mt-2">Match startup</figcaption>
-                        </figure>
-                        <figure class="overflow-hidden rounded-lg">
-                            <img src="images/Night-Liners-3.png" alt="Night-Liners UI testing" class="w-5% h-8% object-cover rounded" loading="lazy">
-                            <figcaption class="text-xs text-gray-500 mt-2">UI prototype</figcaption>
-                        </figure>
-                        <figure class="overflow-hidden rounded-lg">
-                            <img src="images/Night-Liners-4.png" alt="Night-Liners code snippet" class="w-80% h-80% object-cover rounded" loading="lazy">
-                            <figcaption class="text-xs text-gray-500 mt-2">Code snippet</figcaption>
-                        </figure>
+                      <!-- Video 1 (large, kept aspect ratio) -->
+                      <figure class="overflow-hidden rounded-lg flex flex-col items-center">
+                        <div class="w-full max-w-lg aspect-video overflow-hidden rounded"
+                             style="aspect-ratio:16/9;">
+                          <video class="w-full h-full object-cover rounded"
+                                 autoplay loop muted playsinline preload="metadata">
+                            <source src="images/Night-Liners-1.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                        <figcaption class="text-xs text-gray-500 mt-2">Gameplay showcase</figcaption>
+                      </figure>
+                    
+                      <!-- Video 2 (same sizing as video 1) -->
+                      <figure class="overflow-hidden rounded-lg flex flex-col items-center">
+                        <div class="w-full max-w-lg aspect-video overflow-hidden rounded"
+                             style="aspect-ratio:16/9;">
+                          <video class="w-full h-full object-cover rounded"
+                                 autoplay loop muted playsinline preload="metadata">
+                            <source src="images/Night-Liners-2.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                        <figcaption class="text-xs text-gray-500 mt-2">Match startup</figcaption>
+                      </figure>
+                    
+                      <!-- Image 3 (smaller than videos) -->
+                      <figure class="overflow-hidden rounded-lg flex flex-col items-center">
+                        <img src="images/Night-Liners-3.png"
+                             alt="Night-Liners UI testing"
+                             class="w-full max-w-sm h-auto object-cover rounded"
+                             loading="lazy">
+                        <figcaption class="text-xs text-gray-500 mt-2">UI prototype</figcaption>
+                      </figure>
+                    
+                      <!-- Image 4 (a bit bigger than image 3) -->
+                      <figure class="overflow-hidden rounded-lg flex flex-col items-center">
+                        <img src="images/Night-Liners-4.png"
+                             alt="Night-Liners code snippet"
+                             class="w-full max-w-md h-auto object-cover rounded"
+                             loading="lazy">
+                        <figcaption class="text-xs text-gray-500 mt-2">Code snippet</figcaption>
+                      </figure>
                     </div>
-                </div>
-            </div>
 
             <!-- Project 3 -->
             <div class="mb-12 bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
